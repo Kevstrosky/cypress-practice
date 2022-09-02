@@ -1,6 +1,7 @@
 {
-  "nombre":"Juan",
-  "apellido":"Torres",
+  "nombre":"Kevin",
+  "apellidoPaterno":"Ochoa",
+  "apellidoMaterno":"Guerrero",
   "email":"cypress@ateneconocimientos.net",
   "sexo":"Male",
   "telefono":"3333333333",

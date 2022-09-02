@@ -22,7 +22,14 @@ describe('Segundo conjunto de casos de pruebas avanzadas',function(){
         cy.get('#dateOfBirthInput').click()
         cy.get('.react-datepicker__month-select').should('be.visible').select(this.datos.fechaDeNacimiento[0])
         cy.get('.react-datepicker__year-select').should('be.visible').select(this.datos.fechaDeNacimiento[1])
+
+        //cy.get('.subjects-auto-complete_value-container').type(this.datos.materia);
+
+        /*
         cy.get(':nth-child(1) > .react-datepicker__day--001').click()
+        cy.get('input[name="hobbies"][value='+this.datos.hobbies+']').check({force:true}).should('be.checked')
+        */
+       cy.get('div[id^="react-select-"]').click()
 
 
     })
