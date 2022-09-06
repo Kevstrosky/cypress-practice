@@ -1,7 +1,6 @@
 {
   "nombre":"Kevin",
-  "apellidoPaterno":"Ochoa",
-  "apellidoMaterno":"Guerrero",
+  "apellido":"Ochoa",
   "email":"cypress@ateneconocimientos.net",
   "sexo":"Male",
   "telefono":"3333333333",
@@ -14,8 +13,9 @@
     "Sports",
     "Music"
   ],
+  "materia":"español",
   "imagen":"my-image.png",
-  "direccion":"Alguna direccion ficticia",
+  "direccion":"Universidad de Sonora",
   "estado":"NCR",
   "ciudad":"Delhi"
 }
