@@ -1,21 +1,21 @@
 {
   "nombre":"Kevin",
   "apellido":"Ochoa",
-  "email":"cypress@ateneconocimientos.net",
+  "email":"kevinochoa.dev@gmail.com",
   "sexo":"Male",
   "telefono":"3333333333",
   "fechaDeNacimiento":[
     "April",
     "1999",
-    "31"
+    "13"
   ],
+  "materia":"English",
   "hobbies":[
     "Sports",
     "Music"
   ],
-  "materia":"español",
   "imagen":"my-image.png",
-  "direccion":"Universidad de Sonora",
+  "direccion":"Alguna dirección ficticia",
   "estado":"NCR",
   "ciudad":"Delhi"
 }
