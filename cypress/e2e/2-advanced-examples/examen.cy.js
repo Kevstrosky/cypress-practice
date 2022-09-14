@@ -4,32 +4,23 @@
 describe('Segundo conjunto de casos de pruebas avanzadas',function(){
     beforeEach(()=>{
         //ingresamos a la pagina de formulario
-        cy.visit('https://www.telcel.com/')
+        cy.visit('https://tienda.caffenio.com/')
     })
     it('test',()=>{
-        cy.get('#menu-principal')
-        .invoke('attr', 'style', 'display: block')
-        .should('have.attr', 'style', 'display: block')
-
-        cy.get(':nth-child(3) > .black-mobile').click()
-
-        cy.get('tbody > :nth-child(1) > :nth-child(1) > a > img').click()
+        cy.get('#SiteNavCompressed').click()
+        cy.get(':nth-child(4) > .drawer__nav-link').click()
         
-        cy.get('#marca_nocliente_chosen')
-        .invoke('attr', 'class', 'chosen-container chosen-container-single chosen-container-active chosen-with-drop')
-        .should('attr', 'class', 'chosen-container chosen-container-single chosen-container-active chosen-with-drop')
+        cy.get(':nth-child(4) > .product-card > .product-card__info > .product-card__name').click()
 
-        cy.get('#marca_nocliente_chosen > div > div > input').click()
+        cy.get('#AddToCart-product-template_original').click()
+        cy.get('#CartProducts > tr:nth-child(1) > td:nth-child(2) > a.h5.gsvalidated')
+        .should('contain.text','Termo Cobalto de acero inoxidable capacidad 450 ml')
+        cy.get('#CartSubtotal')
+        .should('contain.text','$ 309.00')
 
-        cy.get('#marca_nocliente_chosen > div > ul > li:nth-child(27)').click()
 
-        cy.get('#entrarPerfilador').click()
 
-        cy.get('#seleccion-de-equipos-sidebar-mosaicfilters > div:nth-child(23) > a')
 
-        cy.get('#filtro-acordeon-Marca > fieldset > ul > li:nth-child(2) > div')
-        .invoke('attr', 'class', 'checkbox focus')
-        .should('have.attr', 'class', 'checkbox focus')
         
     })
 
